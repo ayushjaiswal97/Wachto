@@ -1,8 +1,18 @@
+import Sidenav from "./templates/Sidenav";
+import Topnav from "./templates/Topnav";
+
 const Home = () => {
     document.title = "SCSDB | Homepage";
-  return (
-    <div>Home</div>
-  )
-}
+  return  (
+   <>
+     <Sidenav />
+    <div className="w-[80%] h-full">
 
-export default Home
+        <Topnav />
+
+    </div>
+   </>
+  );
+};
+
+export default Home;
